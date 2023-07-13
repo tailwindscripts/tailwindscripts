@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    
+
+    <div class="container m-auto mt-10">
+        <div class="flex flex-wrap -mx-3 mb-5">
+            <div class="w-full max-w-full px-3 mb-6 sm:w-1/2 mx-auto">
+                <div class="relative flex flex-col min-w-0 break-words bg-green-500 border-0 bg-clip-border rounded-2xl mb-5 draggable">
+                    <div class="px-9 pt-5 flex justify-between items-stretch flex-wrap min-h-[70px] pb-0 bg-transparent">
+                        <div class="flex flex-col items-start justify-center m-2 ml-0 font-medium text-xl/normal text-dark">
+                            <span class="text-white text-5xl/none font-semibold mr-2 tracking-[-0.115rem]">92</span>
+                            <span class="pt-1 font-medium text-white/80 text-lg/normal">Completed Tasks</span>
+                        </div>
+                    </div>
+                    <div class="flex items-end flex-auto py-8 pt-0 px-9 ">
+                        <div class="flex flex-col items-center w-full mt-3">
+                            <div class="flex justify-between w-full mt-auto mb-2 font-semibold text-white/80 text-lg/normal">
+                                <span class="mr-4">12 Pending</span>
+                                <span>85%</span>
+                            </div>
+        
+                            <div class="mx-3 rounded-2xl h-[8px] w-full bg-white/20">
+                                <div class="rounded-2xl bg-white w-[85%] h-[8px]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mx-auto container lg:max-w-[356px] md:max-w-[720px] max-w-[343px] py-8 px-8 bg-white shadow rounded-md mt-2">
+            <div class="py-4">
+                <svg class="mx-auto" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48" height="48" rx="24" fill="#10B981"></rect>
+                    <path d="M34 16L20 32L14 26" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <p class="text-base font-semibold leading-normal text-center text-gray-800">
+                Thanks for your Feedback!
+            </p>
+    
+            <p class="text-sm leading-none text-center text-gray-600 mt-2">
+                Excellent Experience
+            </p>
+    
+            <div class="mt-6">
+                <button class="text-sm font-medium leading-none text-white px-6 py-4 bg-[#10b981] rounded w-full hover:bg-green-400 transform duration-300 ease-in-out">
+                    Go to Homepage
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="container mb-10 mt-10">
+            <div class="w-full bg-white pt-12 lg:pb-12  pb-44 flex flex-col xl:flex-row items-start xl:items-center justify-between px-5 xl:px-10 shadow rounded-t">
+                <div class="mb-4 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 lg:w-1/2">
+                    <a tabindex="0" class="focus:outline-none text-gray-800 text-lg font-bold">Job Postings</a>
+                    <p tabindex="0" class="focus:outline-none font-normal text-sm text-gray-600 mt-1">Uncommon people with a whole lot in common</p>
+                </div>
+                <div class="lg:hidden w-full relative mt-2 md:mt-4">
+                    <div class="absolute inset-0 m-auto mr-4 z-0 w-6 h-6">
+                       <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/grey_tabs_on_right-svg1.svg" alt="icons">
+                    </div>
+                    <select class="form-select block w-full p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative z-10">
+                        <option class="text-sm text-gray-600 ">Inactive</option>
+                        <option class="text-sm text-gray-600 ">Inactive</option>
+                        <option selected="" class="text-sm text-gray-600 ">Active</option>
+                        <option class="text-sm text-gray-600 ">Inactive</option>
+                        <option class="text-sm text-gray-600 ">Inactive</option>
+                    </select>
+                </div>
+                <div class="hidden lg:flex items-center lg:mt-6 xl:mt-0">
+                    <button role="listitem" tabindex="0" class=" focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:outline-none font-normal flex justify-center items-center py-2 px-4 rounded mr-4 xl:mr-0 xl:ml-0 bg-gray-200 text-gray-800 text-sm">Active</button>
+                    <button role="listitem" tabindex="0" class=" focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:outline-none cursor-pointer font-normal flex justify-center items-center py-2 px-4 rounded mr-4 sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4 hover:bg-gray-200 ">Inactive</button>
+                    <button role="listitem" tabindex="0" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:outline-none cursor-pointer font-normal flex justify-center items-center py-2 px-4 rounded mr-4 sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4 hover:bg-gray-200 ">Inactive</button>
+                    <button role="listitem" tabindex="0" class=" focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 focus:outline-none cursor-pointer font-normal flex justify-center items-center py-2 px-4 rounded mr-4 sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0 sm:ml-4 md:ml-4 lg:ml-4 xl:ml-4 hover:bg-gray-200 ">Inactive</button>
+                </div>
+            </div>
+        </div>
+    
+
+
+        <div class="container mx-auto max-w-xs rounded-lg overflow-hidden shadow-lg my-2 bg-white">
+            <div class="relative mb-6">
+               <img class="w-full" src="https://images.unsplash.com/photo-1689085382918-eab80bd3b708" alt="Profile picture">
+               <div class="text-center absolute w-full" style="bottom: -30px">
+                  <div class="mb-10">
+                     <p class="text-white tracking-wide uppercase text-lg font-bold">Witch</p>
+                     <p class="text-gray-400 text-sm">@witch_forever</p>
+                  </div>
+                  <button class="p-4 bg-blue-600 rounded-full transition ease-in duration-200 focus:outline-none">
+                     <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-7 h-7">
+                        <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
+                           C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
+                           C15.952,9,16,9.447,16,10z"></path>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <div class="py-10 px-6 text-center tracking-wide grid grid-cols-3 gap-6">
+               <div class="posts">
+                  <p class="text-lg">324</p>
+                  <p class="text-gray-400 text-sm">Posts</p>
+               </div>
+               <div class="followers">
+                  <p class="text-lg">7542</p>
+                  <p class="text-gray-400 text-sm">Followers</p>
+               </div>
+               <div class="following">
+                  <p class="text-lg">295</p>
+                  <p class="text-gray-400 text-sm">Following</p>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="min-h-screen flex justify-center items-center">
+            <div class="">
+                <div class="text-center font-semibold">
+                    <h1 class="text-5xl">
+                        <span class="text-blue-700 tracking-wide">Flexible </span>
+                        <span>Plans</span>
+                    </h1>
+                    <p class="pt-6 text-xl text-gray-400 font-normal w-full px-8 md:w-full">
+                        Choose a plan that works best for you and<br> your team.
+                    </p>
+                </div>
+                <div class="pt-24 flex flex-row">
+                    <!-- Basic Card -->
+                    <div class="w-96 p-8 bg-white text-center rounded-3xl pr-16 shadow-xl">
+                        <h1 class="text-black font-semibold text-2xl">Basic</h1>
+                        <p class="pt-2 tracking-wide">
+                            <span class="text-gray-400 align-top">$ </span>
+                            <span class="text-3xl font-semibold">10</span>
+                            <span class="text-gray-400 font-medium">/ user</span>
+                        </p>
+                        <hr class="mt-4 border-1">
+                        <div class="pt-8">
+                            <p class="font-semibold text-gray-400 text-left">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    Get started with <span class="text-black">messaging</span>
+                                </span>
+                            </p>
+                            <p class="font-semibold text-gray-400 text-left pt-5">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    Flexible <span class="text-black">team meetings</span>
+                                </span>
+                            </p>
+                            <p class="font-semibold text-gray-400 text-left pt-5">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    <span class="text-black">5 TB</span> cloud storage
+                                </span>
+                            </p>
+    
+                            <a class="" target="_blank">
+                                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                                    <span class="font-medium">
+                                        Choose Plan
+                                    </span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- StartUp Card -->
+                    <div class="w-80 p-8 bg-gray-900 text-center rounded-3xl text-white border-4 shadow-xl border-white transform scale-125">
+                        <h1 class="text-white font-semibold text-2xl">Startup</h1>
+                        <p class="pt-2 tracking-wide">
+                            <span class="text-gray-400 align-top">$ </span>
+                            <span class="text-3xl font-semibold">24</span>
+                            <span class="text-gray-400 font-medium">/ user</span>
+                        </p>
+                        <hr class="mt-4 border-1 border-gray-600">
+                        <div class="pt-8">
+                            <p class="font-semibold text-gray-400 text-left">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    All features in <span class="text-white">Basic</span>
+                                </span>
+                            </p>
+                            <p class="font-semibold text-gray-400 text-left pt-5">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    Flexible <span class="text-white">call scheduling</span>
+                                </span>
+                            </p>
+                            <p class="font-semibold text-gray-400 text-left pt-5">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    <span class="text-white">15 TB</span> cloud storage
+                                </span>
+                            </p>
+    
+                            <a class="" target="_blank">
+                                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                                    <span class="font-medium">
+                                        Choose Plan
+                                    </span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <p class="bg-blue-700 font-semibold px-4 py-1 rounded-full uppercase text-xs">Popular</p>
+                        </div>
+                    </div>
+                    <!-- Enterprise Card -->
+                    <div class="w-96 p-8 bg-white text-center rounded-3xl pl-16 shadow-xl">
+                        <h1 class="text-black font-semibold text-2xl">Enterprise</h1>
+                        <p class="pt-2 tracking-wide">
+                            <span class="text-gray-400 align-top">$ </span>
+                            <span class="text-3xl font-semibold">35</span>
+                            <span class="text-gray-400 font-medium">/ user</span>
+                        </p>
+                        <hr class="mt-4 border-1">
+                        <div class="pt-8">
+                            <p class="font-semibold text-gray-400 text-left">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    All features in <span class="text-black">Startup</span>
+                                </span>
+                            </p>
+                            <p class="font-semibold text-gray-400 text-left pt-5">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    Growth <span class="text-black">oriented</span>
+                                </span>
+                            </p>
+                            <p class="font-semibold text-gray-400 text-left pt-5">
+                                <span class="material-icons align-middle">
+                                    done
+                                </span>
+                                <span class="pl-2">
+                                    <span class="text-black">Unlimited</span> cloud storage
+                                </span>
+                            </p>
+    
+                            <a class="" target="_blank">
+                                <p class="w-full py-4 bg-blue-600 mt-8 rounded-xl text-white">
+                                    <span class="font-medium">
+                                        Choose Plan
+                                    </span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
