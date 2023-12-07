@@ -60,8 +60,10 @@
         </div>
       </nav>
 
-      <div class="flex p-4 flex-col md:flex-row">
-        <div class="float-left my-auto flex flex-col order-last md:order-first">
+      <div class="flex p-4 flex-col md:flex-row my-20">
+        <div
+          class="float-left my-auto flex flex-col order-last md:order-first flex-1 mx-auto text-center"
+        >
           <p class="text-blue-600/100 text-xl mt-5 md:mt-0">
             Make developer life easy
           </p>
@@ -73,7 +75,7 @@
             built by the makers of Tailwind CSS. The perfect starting point for
             your next project.
           </p>
-          <div class="flex mt-7">
+          <div class="flex mt-7 mx-auto">
             <button
               class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"
             >
@@ -86,8 +88,117 @@
             </button>
           </div>
         </div>
-        <div class="ml-0 md:ml-5">
-          <img src="desktop.jpg" class="w-full" alt="Design your desktop" />
+      </div>
+
+      <div class="w-full">
+        <img
+          class="mx-auto"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAklEQVR4nNXaTYjNURjH8c+MJBkZI4lG2VKKNDXKYkpCkr2NFDusvIywMqVYz1azkIWFjUQosyAlWSgRJVKSaRbexut1deq/uAnzPzP/e+9zv/XbP986r885xGIu1mEfzuES7uMtPqKOHkFZiUO4ik9Fsf/LYoGYh70YR22awp/jDLaiTxAWYhhvpim+hsvYgi6BSMXsKSFQxx1sEJBVuFtC4AdOYI6A7MRkCYk0yXcIyjH8KiHxAQMCS9RL5HuxGoXkeEmJerF/hGQzfpaUuBFtaW3coSdKSkyhX1CuZwyps4KyLUPifaSjRiNpA3uUITIqKLszJFLWC8rNDImHgtKfsdymjAjKqcxhNSQoDzIkPhcXqnD0Zg6re4KyPXNYnReU4UyRo4IylimyS1BuZ4oMCsqzTJHVgvIuU2S5oExlisxv9ZFjIrPAKjNZtI9afl2tMqm7mO41lTLSBpHTmkB35vF8thlvZodxWcle7WyT3j5WaDJDTZ4vtaLjHvLOUc/ISS2kG9eaIHGrHZ33PrysUOI1lmoTg/hWgUR6B9mkzRypQOSwAHQVb3szlbgSqXHdixczkHiFJYIxgK8ZEulBZ6OgHMwQOSA4F0pIpG8Y4enBk2l+LSzSIawtuoh/SnyJ3Hn/F/v/IpJ++HQkYw0SF3UwC/AYT4vPMx3NmiIt5zd8FJdPGiaEGAAAAABJRU5ErkJggg=="
+        />
+      </div>
+
+      <div class="flex mt-7 w-full p-5">
+        <div class="flex-1 w-1/2 p-5 my-auto">
+          <div
+            class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl"
+          >
+            <article
+              class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            >
+              <div
+                class="relative overflow-hidden text-gray-700 bg-clip-border rounded-xl h-80"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="profile-picture"
+                />
+              </div>
+              <div
+                class="flex justify-between items-center mb-5 text-gray-500 mt-3"
+              >
+                <span class="text-sm flex-1">Posted On: 14 December, 2023</span>
+                <div class="flex ml-auto">
+                  <img width="25" height="25" src="https://img.icons8.com/color/25/facebook.png" alt="facebook"/>
+                  <img width="25" height="25" src="https://img.icons8.com/nolan/25/twitterx.png" alt="twitterx"/>
+                  <img width="25" height="25" src="https://img.icons8.com/fluency/25/instagram-new.png" alt="instagram-new"/>
+                </div>
+                </span>
+              </div>
+              <h2
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                <a href="#">How to quickly deploy a static website</a>
+              </h2>
+              <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                Static websites are now used to bootstrap lots of websites and
+                are becoming the basis for a variety of tools that even
+                influence both web designers and developers influence both web
+                designers and developers.
+              </p>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                  <img
+                    class="w-9 h-9 rounded-full"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                    alt="Jese Leos avatar"
+                  />
+                  <div class="flex flex-col">
+                    <p class="font-medium dark:text-white">Jese Leos</p>
+                    <p class="text-sm text-slate-500">Engineering Manager, Tainwind Scripts</p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                >
+                  Read more
+                  <svg
+                    class="ml-2 w-4 h-4"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="flex-1 w-1/2 bg-gray-500 ml-5">
+          <div class="overflow-x-scroll p-5 overflow-y-scroll">
+            <pre data-language="html" data-theme="default">
+        <code data-language="html" data-theme="default"><span class="line"><span style="color:#C9D1D9"> &lt;</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">img</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">src</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"https://docs.material-tailwind.com/img/team-3.jpg"</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">alt</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"profile-picture"</span><span style="color:#C9D1D9"> /&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">  &lt;/</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"p-6 text-center"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">h4</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">      Natalie Paisley</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">h4</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">p</span></span>
+    <span class="line"><span style="color:#C9D1D9">      </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">      CEO / Co-Founder</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">p</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">  &lt;/</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"flex justify-center p-6 pt-2 gap-7"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">a</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"#facebook"</span></span>
+    <span class="line"><span style="color:#C9D1D9">      </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">      &lt;</span><span style="color:#7EE787">i</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"fab fa-facebook"</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">aria-hidden</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"true"</span><span style="color:#C9D1D9">&gt;&lt;/</span><span style="color:#7EE787">i</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">a</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">a</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"#twitter"</span></span>
+    <span class="line"><span style="color:#C9D1D9">      </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-light-blue-600 to-light-blue-400"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">      &lt;</span><span style="color:#7EE787">i</span></span>
+    <span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"fab fa-twitter"</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">aria-hidden</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"true"</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">      &lt;/</span><span style="color:#7EE787">i</span><span style="color:#C9D1D9">&gt;</span></span>
+    <span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">a</span><span style="color:#C9D1D9">&gt;</span></span>
+  </code>
+  </pre>
+          </div>
         </div>
       </div>
 
@@ -189,10 +300,7 @@
             class="px-7 py-3 w-full text-center mr-3 flex items-center justify-center"
           >
             <span></span>
-            <span
-              class="w-5 h-5"
-              ></span
-            >
+            <span class="w-5 h-5"></span>
           </button>
         </div>
 
@@ -259,7 +367,9 @@
         </div>
       </div>
 
-      <footer class="text-center text-slate-300 py-5">&copy;Copyright 2023: TailwindScript Team</footer>
+      <footer class="text-center text-slate-300 py-5">
+        &copy;Copyright 2023: TailwindScript Team
+      </footer>
     </div>
   </body>
 </html>
