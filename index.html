@@ -6,6 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Scripts</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .circle-menu li {
+  list-style: none;
+  display: inline;
+}
+
+.circle-menu {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    border: dashed 2px #cccccc;
+    border-radius: 50%;
+    margin: 5em auto 7em;
+}
+.circle-menu a {
+  display: block;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  width: 8em; height: 8em;
+  line-height:8em;
+  margin: -3.5em;
+  -moz-border-radius: 4em;
+  -webkit-border-radius: 4em;
+  border-radius: 4em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+}
+
+.circle-menu a.spiritual {background:#009cde;opacity: 0.6;}
+.circle-menu a.occupational {background:#3a913f;opacity: 0.6;}
+.circle-menu a.emotional {background:#fecd06;opacity: 0.6;}
+.circle-menu a.environmental {background:#fa7f00;opacity: 0.6;}
+.circle-menu a.intellectual {background:#ed2124;opacity: 0.6;}
+.circle-menu a.social {background:#932683;opacity: 0.6;}
+.circle-menu a.physical {background:#203864;opacity: 0.6;}
+
+.circle-menu a.spiritual:hover {background:#009cde;opacity: 1.0;}
+.circle-menu a.occupational:hover {background:#3a913f;opacity: 1.0;}
+.circle-menu a.emotional:hover {background:#fecd06;opacity: 1.0;}
+.circle-menu a.environmental:hover {background:#fa7f00;opacity: 1.0;}
+.circle-menu a.intellectual:hover {background:#ed2124;opacity: 1.0;}
+.circle-menu a.social:hover {background:#932683;opacity: 1.0;}
+.circle-menu a.physical:hover {background:#203864;opacity: 1.0;}
+
+
+ /* 360/7= 51 roughly so for 7 elements rotate the element every 51deg. 12em translate is half the container */
+.circle-menu .spiritual { transform: rotate(51deg) translate(12em) rotate(-51deg); -webkit-transform: rotate(51deg) translate(12em) rotate(-51deg); -ms-transform: rotate(51deg) translate(12em) rotate(-51deg);}
+.circle-menu .occupational { transform: rotate(102deg) translate(12em) rotate(-102deg); -webkit-transform: rotate(102deg) translate(12em) rotate(-102deg); -ms-transform: rotate(102deg) translate(12em) rotate(-102deg);}
+.circle-menu .emotional { transform: rotate(153deg) translate(12em) rotate(-153deg); -webkit-transform: rotate(153deg) translate(12em) rotate(-153deg); -ms-transform: rotate(153deg) translate(12em) rotate(-153deg);}
+.circle-menu .environmental { transform: rotate(204deg) translate(12em) rotate(-204deg); -webkit-transform: rotate(204deg) translate(12em) rotate(-204deg); -ms-transform:rotate(204deg) translate(12em) rotate(-204deg);}
+.circle-menu .intellectual { transform: rotate(255deg) translate(12em) rotate(-255deg); -webkit-transform: rotate(255deg) translate(12em) rotate(-255deg); -ms-transform: rotate(255deg) translate(12em) rotate(-255eg);}
+.circle-menu .social { transform: rotate(306deg) translate(12em) rotate(-306deg); -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); -ms-transform: rotate(306deg) translate(12em) rotate(-306deg);}
+.circle-menu .physical { transform: rotate(357deg) translate(12em) rotate(-357deg); -webkit-transform: rotate(357deg) translate(12em) rotate(-357deg); -ms-transform: rotate(357deg) translate(12em) rotate(-357deg);}
+
+    </style>
   </head>
   <body>
     <div class="container mx-auto pt-5">
@@ -116,8 +174,9 @@
               <div
                 class="flex justify-between items-center mb-5 text-gray-500 mt-3"
               >
-                <span class="text-sm flex-1">Posted On: 14 December, 2023</span>
+                <span class="text-sm flex-1">14 December, 2023</span>
                 <div class="flex ml-auto">
+                  <span>Share on: </span>
                   <img width="25" height="25" src="https://img.icons8.com/color/25/facebook.png" alt="facebook"/>
                   <img width="25" height="25" src="https://img.icons8.com/nolan/25/twitterx.png" alt="twitterx"/>
                   <img width="25" height="25" src="https://img.icons8.com/fluency/25/instagram-new.png" alt="instagram-new"/>
@@ -169,35 +228,17 @@
             </article>
           </div>
         </div>
-        <div class="flex-1 w-1/2 bg-gray-500 ml-5">
-          <div class="overflow-x-scroll p-5 overflow-y-scroll">
-            <pre data-language="html" data-theme="default">
-        <code data-language="html" data-theme="default"><span class="line"><span style="color:#C9D1D9"> &lt;</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">img</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">src</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"https://docs.material-tailwind.com/img/team-3.jpg"</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">alt</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"profile-picture"</span><span style="color:#C9D1D9"> /&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">  &lt;/</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"p-6 text-center"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">h4</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">      Natalie Paisley</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">h4</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">p</span></span>
-    <span class="line"><span style="color:#C9D1D9">      </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"block font-sans text-base antialiased font-medium leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-gray-600 to-blue-gray-400"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">      CEO / Co-Founder</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">p</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">  &lt;/</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">  &lt;</span><span style="color:#7EE787">div</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"flex justify-center p-6 pt-2 gap-7"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">a</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"#facebook"</span></span>
-    <span class="line"><span style="color:#C9D1D9">      </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">      &lt;</span><span style="color:#7EE787">i</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"fab fa-facebook"</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">aria-hidden</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"true"</span><span style="color:#C9D1D9">&gt;&lt;/</span><span style="color:#7EE787">i</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">a</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;</span><span style="color:#7EE787">a</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">href</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"#twitter"</span></span>
-    <span class="line"><span style="color:#C9D1D9">      </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"block font-sans text-xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-light-blue-600 to-light-blue-400"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">      &lt;</span><span style="color:#7EE787">i</span></span>
-    <span class="line"><span style="color:#C9D1D9">        </span><span style="color:#79C0FF">class</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"fab fa-twitter"</span><span style="color:#C9D1D9"> </span><span style="color:#79C0FF">aria-hidden</span><span style="color:#C9D1D9">=</span><span style="color:#A5D6FF">"true"</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">      &lt;/</span><span style="color:#7EE787">i</span><span style="color:#C9D1D9">&gt;</span></span>
-    <span class="line"><span style="color:#C9D1D9">    &lt;/</span><span style="color:#7EE787">a</span><span style="color:#C9D1D9">&gt;</span></span>
-  </code>
-  </pre>
+        <div class="flex-1 w-1/2 ml-auto my-auto">
+          <div class="circle-menu">
+            <ul>
+              <li><a class="spiritual" href="#">Accordion</a></li>
+              <li><a class="occupational" href="#">Button</a></li>
+              <li><a class="emotional" href="#">Card</a></li>
+              <li><a class="environmental" href="#">Avatar</a></li>
+              <li><a class="intellectual" href="#">Carousel</a></li>
+              <li><a class="social" href="#">Tabs</a></li>
+              <li><a class="physical" href="#">Alert</a></li>
+            </ul>
           </div>
         </div>
       </div>
